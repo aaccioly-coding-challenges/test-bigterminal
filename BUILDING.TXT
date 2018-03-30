@@ -1,0 +1,13 @@
+BUILDING FROM SOURCE
+
+test-bigterminal is built using sbt: http://www.scala-sbt.org/
+Once you've installed sbt you can download compile dependencies
+(scalaSTM, ScalaTest), build, and run the unit tests with
+
+  sbt update test
+
+You can get a list of sbt build targets with "sbt tasks".  If you
+compile, or build a JAR, look in target/scala_* for the results.
+The Scala version is configured in ./build.sbt.  To run a build
+target for all of the versions prefix the action with a "+",
+for example "sbt +test".
